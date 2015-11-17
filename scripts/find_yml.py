@@ -5,7 +5,7 @@ find docker-compose.yml files
 import fnmatch
 import os
 
-MAX_DEPTH=os.environ.get('MAX_DEPTH', -1)
+MAX_DEPTH=int(os.environ.get('MAX_DEPTH', -1))
 
 def walklevel(some_dir, level=-1):
     some_dir = some_dir.rstrip(os.path.sep)
