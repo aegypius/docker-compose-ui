@@ -17,7 +17,7 @@ import requests
 
 # Flask Application
 API_V1 = '/api/v1/'
-YML_PATH = '/opt/docker-compose-projects'
+YML_PATH = os.environ.get('YML_PATH', '/opt/docker-compose-projects')
 logging.basicConfig(level=logging.DEBUG)
 app = Flask(__name__, static_url_path='')
 
