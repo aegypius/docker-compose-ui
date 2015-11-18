@@ -17,3 +17,5 @@ EXPOSE 5000
 
 CMD []
 ENTRYPOINT ["/env/bin/python", "/app/main.py"]
+
+ENV MAX_DEPTH=2
